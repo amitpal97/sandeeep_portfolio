@@ -90,7 +90,8 @@ body {
     transform: scale(00.5);
 
 }
-.nav_optionContac{
+
+.nav_optionContac {
     width: 12%;
     margin: 8px;
     padding: 8px;
@@ -103,13 +104,15 @@ body {
     border-radius: 15px;
     color: black;
 }
-.nav_optionContac:hover{
+
+.nav_optionContac:hover {
     transform: scale(00.5);
     /* transform: translate(1); */
     background-color: brown;
     color: cadetblue;
 }
-.nav_optionAbout{
+
+.nav_optionAbout {
     width: 12%;
     margin: 8px;
     padding: 8px;
@@ -122,13 +125,15 @@ body {
     border-radius: 15px;
     color: black;
 }
-.nav_optionAbout:hover{
+
+.nav_optionAbout:hover {
     transform: scale(00.5);
     /* transform: translate(1); */
     background-color: brown;
     color: cadetblue;
 }
-.nav_optionEducation{
+
+.nav_optionEducation {
     width: 12%;
     margin: 8px;
     padding: 8px;
@@ -141,7 +146,8 @@ body {
     border-radius: 15px;
     color: black;
 }
-.nav_optionEducation:hover{
+
+.nav_optionEducation:hover {
     transform: scale(00.5);
     /* transform: translate(1); */
     background-color: brown;
@@ -258,20 +264,54 @@ body {
     height: 200px;
     /* color: ; */
 }
-.home_img_rajan{
+
+.home_img_rajan {
     width: 30px;
 }
-.rajan_img{
+
+.rajan_img {
     width: 300px;
     position: absolute;
-    left:110%;
+    left: 110%;
     border: 10px solid gold;
     border-radius: 10px;
     box-shadow: 3px 5px 50px red;
     backdrop-filter: blur(80px);
+    /* animation: rajan; */
+    animation: rajan 3s infinite;
+
 
     /* top:%; */
 }
+
+@keyframes rajan {
+    0% {
+
+        top: 10%;
+    }
+
+    30% {
+        top: 50%
+    }
+
+    /* 0% {
+
+        bottom: 0%;
+    }
+
+    30% {
+        bottom: 50%
+    } */
+
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
 .para_homeName {
     font-family: 'Angkor-Regular';
     padding-top: 10px;
@@ -282,21 +322,22 @@ body {
     font-family: 'Angkor-Regular';
     padding-top: 10px;
     color: red;
-    
+
 }
 
-.table_section{
+.table_section {
     width: 100%;
     backdrop-filter: blur(110px);
     height: 700px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     border: 10px solid black;
     border-radius: 10px;
     /* background-color:lightgrey; */
-    
+
 }
+
 .table_Education {
     width: 80%;
     border: 5px solid #000;
@@ -325,14 +366,15 @@ th {
 }
 
 
-.Contact_Us{
+.Contact_Us {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 700px;
 }
-.Contact_Us_para{
+
+.Contact_Us_para {
     padding: 10px;
     font-family: 'Angkor-Regular';
     font-size: 35px;
